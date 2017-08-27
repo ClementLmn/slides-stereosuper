@@ -1,0 +1,74 @@
+/**
+ * Black theme for reveal.js. This is the opposite of the 'white' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/gotham/gotham.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #000;
+
+$mainColor: #fff;
+$headingColor: #009be3;
+
+$mainFontSize: 42px;
+$mainFont: 'gotham medium', Helvetica, sans-serif;
+$headingFont: 'gotham medium', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #42affa;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-light-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #222;
+	}
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.first-section-wrapper{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	> div {
+		position: relative;
+		.big-name {
+			position: absolute;
+			top: 30px;
+			left: 45%;
+		}
+	}
+}
+
+.big-name{
+	color: $headingColor;
+	font-weight: 700 !important;
+	font-size: 60px !important;
+	line-height: 1 !important;
+	text-align: left !important;
+}
+
+

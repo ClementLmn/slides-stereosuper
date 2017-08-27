@@ -4,6 +4,7 @@
  * By Hakim El Hattab, http://hakim.se
  */
 @import url(../../lib/font/gotham/gotham.css);
+@import url(../../lib/font/elena/elena.css);
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222; }
 
@@ -22,12 +23,12 @@ body {
 
 ::selection {
   color: #fff;
-  background: #bee4fd;
+  background: #64ceff;
   text-shadow: none; }
 
 ::-moz-selection {
   color: #fff;
-  background: #bee4fd;
+  background: #64ceff;
   text-shadow: none; }
 
 .reveal .slides > section,
@@ -210,20 +211,20 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #42affa;
+  color: #009be3;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
   transition: color .15s ease; }
 
 .reveal a:hover {
-  color: #8dcffc;
+  color: #31beff;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #068de9; }
+  background: #006797; }
 
 /*********************************************
  * IMAGES
@@ -245,7 +246,7 @@ body {
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
-  border-color: #42affa;
+  border-color: #009be3;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
@@ -253,31 +254,31 @@ body {
  *********************************************/
 .reveal .controls .navigate-left,
 .reveal .controls .navigate-left.enabled {
-  border-right-color: #42affa; }
+  border-right-color: #009be3; }
 
 .reveal .controls .navigate-right,
 .reveal .controls .navigate-right.enabled {
-  border-left-color: #42affa; }
+  border-left-color: #009be3; }
 
 .reveal .controls .navigate-up,
 .reveal .controls .navigate-up.enabled {
-  border-bottom-color: #42affa; }
+  border-bottom-color: #009be3; }
 
 .reveal .controls .navigate-down,
 .reveal .controls .navigate-down.enabled {
-  border-top-color: #42affa; }
+  border-top-color: #009be3; }
 
 .reveal .controls .navigate-left.enabled:hover {
-  border-right-color: #8dcffc; }
+  border-right-color: #31beff; }
 
 .reveal .controls .navigate-right.enabled:hover {
-  border-left-color: #8dcffc; }
+  border-left-color: #31beff; }
 
 .reveal .controls .navigate-up.enabled:hover {
-  border-bottom-color: #8dcffc; }
+  border-bottom-color: #31beff; }
 
 .reveal .controls .navigate-down.enabled:hover {
-  border-top-color: #8dcffc; }
+  border-top-color: #31beff; }
 
 /*********************************************
  * PROGRESS BAR
@@ -286,7 +287,7 @@ body {
   background: rgba(0, 0, 0, 0.2); }
 
 .reveal .progress span {
-  background: #42affa;
+  background: #009be3;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
@@ -303,6 +304,36 @@ body {
       position: absolute;
       top: 30px;
       left: 45%; }
+
+.second-section-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+  .second-section-wrapper > .row {
+    margin: 50px 0;
+    padding-right: 120px;
+    position: relative;
+    display: flex;
+    justify-content: space-between; }
+    .second-section-wrapper > .row > div {
+      position: relative; }
+      .second-section-wrapper > .row > div img {
+        width: 200px; }
+      .second-section-wrapper > .row > div .big-name {
+        position: absolute;
+        top: 30px;
+        left: 45%;
+        font-size: 45px !important; }
+      .second-section-wrapper > .row > div .job {
+        position: absolute;
+        top: 150px;
+        left: 110%; }
+
+.job {
+  font-family: "elena", Helvetica, sans-serif !important;
+  font-size: 20px !important;
+  text-align: left; }
 
 .big-name {
   color: #009be3;

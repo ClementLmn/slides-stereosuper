@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'elena';
+    src: url('Elena-Regular_gdi.woff') format('woff'),
+         url('Elena-Regular_gdi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

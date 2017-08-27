@@ -13,6 +13,7 @@
 
 // Include theme-specific fonts
 @import url(../../lib/font/gotham/gotham.css);
+@import url(../../lib/font/elena/elena.css);
 
 
 // Override theme settings (see ../template/settings.scss)
@@ -23,12 +24,13 @@ $headingColor: #009be3;
 
 $mainFontSize: 42px;
 $mainFont: 'gotham medium', Helvetica, sans-serif;
+$elena: 'elena', Helvetica, sans-serif;
 $headingFont: 'gotham medium', Helvetica, sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
 $headingFontWeight: 600;
-$linkColor: #42affa;
+$linkColor: #009be3;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 
@@ -61,6 +63,44 @@ section.has-light-background {
 			left: 45%;
 		}
 	}
+}
+
+.second-section-wrapper{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	> .row {
+		margin: 50px 0;
+		padding-right: 120px;
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		> div {
+			position: relative;
+			img {
+				width: 200px;
+			}
+			.big-name {
+				position: absolute;
+				top: 30px;
+				left: 45%;
+				font-size: 45px !important;
+			}
+			.job{
+				position: absolute;
+				top: 150px;
+				left: 110%;
+			}
+		}
+	}
+	
+}
+
+.job{
+	font-family: $elena !important;
+	font-size: 20px !important;
+	text-align: left;
 }
 
 .big-name{

@@ -59,6 +59,10 @@ body {
     visibility: inherit; }
   .reveal .slides section .fragment.delayed {
     transition: all .5s ease-in-out 0.2s; }
+  .reveal .slides section .fragment.delayed-2 {
+    transition: all .5s ease-in-out 0.4s; }
+  .reveal .slides section .fragment.delayed-3 {
+    transition: all .5s ease-in-out 0.6s; }
 
 .reveal .slides section .fragment.grow {
   opacity: 1;

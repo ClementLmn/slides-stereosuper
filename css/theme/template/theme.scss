@@ -7,6 +7,25 @@
 body {
 	@include bodyBackground();
 	background-color: $backgroundColor;
+	transition: background-color 0.5s linear;
+	&.iadvize{
+		background-color: #2bc655;
+	}
+	&.drivy{
+		background-color: #3c4659;
+	}
+	&.chauffeur{
+		background-color: #252930;
+	}
+	&.leon{
+		background-color: #ce0a2a;
+	}
+	&.akeneo{
+		background-color: #8f21d5;
+	}
+	&.beezup{
+		background-color: #0098e0;
+	}
 }
 
 .reveal {

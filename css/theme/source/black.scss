@@ -97,6 +97,61 @@ section.has-light-background {
 	
 }
 
+.bg-section {
+	> div {
+		position: fixed;
+		top: 0;
+		left: calc((50vw - 480px)* -1);
+		height: 100vh;
+		width: 100vw;
+	}
+	
+}
+
+.logo-section{
+	width: 960px;
+	height: 700px;
+	position: relative;
+	.logo{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		> span{
+			display: block;
+		}
+		svg {
+			width: 100%;
+			height: auto;
+			display: block;
+			fill: white;
+		}
+	}
+}
+
+#icon-iadvize{
+	max-width: 350px;
+}
+#icon-drivy{
+	max-width: 220px;
+}
+#icon-chauffeurprive{
+	max-width: 620px;
+}
+#icon-leon-grosse{
+	max-width: 220px;
+}
+#icon-akeneo{
+	max-width: 320px;
+}
+#icon-beezup{
+	max-width: 220px;
+}
+
 .job{
 	font-family: $elena !important;
 	font-size: 20px !important;

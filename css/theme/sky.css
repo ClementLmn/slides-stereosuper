@@ -19,7 +19,20 @@ body {
   background: -o-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
   background: -ms-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
   background: radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-  background-color: #f7fbfc; }
+  background-color: #f7fbfc;
+  transition: background-color 0.5s linear; }
+  body.iadvize {
+    background-color: #2bc655; }
+  body.drivy {
+    background-color: #3c4659; }
+  body.chauffeur {
+    background-color: #252930; }
+  body.leon {
+    background-color: #ce0a2a; }
+  body.akeneo {
+    background-color: #8f21d5; }
+  body.beezup {
+    background-color: #0098e0; }
 
 .reveal {
   font-family: "Open Sans", sans-serif;

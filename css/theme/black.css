@@ -13,7 +13,20 @@ section.has-light-background, section.has-light-background h1, section.has-light
  *********************************************/
 body {
   background: #000;
-  background-color: #000; }
+  background-color: #000;
+  transition: background-color 0.5s linear; }
+  body.iadvize {
+    background-color: #2bc655; }
+  body.drivy {
+    background-color: #3c4659; }
+  body.chauffeur {
+    background-color: #252930; }
+  body.leon {
+    background-color: #ce0a2a; }
+  body.akeneo {
+    background-color: #8f21d5; }
+  body.beezup {
+    background-color: #0098e0; }
 
 .reveal {
   font-family: "gotham medium", Helvetica, sans-serif;
@@ -329,6 +342,52 @@ body {
         position: absolute;
         top: 150px;
         left: 110%; }
+
+.bg-section > div {
+  position: fixed;
+  top: 0;
+  left: calc((50vw - 480px)* -1);
+  height: 100vh;
+  width: 100vw; }
+
+.logo-section {
+  width: 960px;
+  height: 700px;
+  position: relative; }
+  .logo-section .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .logo-section .logo > span {
+      display: block; }
+    .logo-section .logo svg {
+      width: 100%;
+      height: auto;
+      display: block;
+      fill: white; }
+
+#icon-iadvize {
+  max-width: 350px; }
+
+#icon-drivy {
+  max-width: 220px; }
+
+#icon-chauffeurprive {
+  max-width: 620px; }
+
+#icon-leon-grosse {
+  max-width: 220px; }
+
+#icon-akeneo {
+  max-width: 320px; }
+
+#icon-beezup {
+  max-width: 220px; }
 
 .job {
   font-family: "elena", Helvetica, sans-serif !important;

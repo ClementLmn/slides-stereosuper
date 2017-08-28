@@ -15,7 +15,20 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  *********************************************/
 body {
   background: #fff;
-  background-color: #fff; }
+  background-color: #fff;
+  transition: background-color 0.5s linear; }
+  body.iadvize {
+    background-color: #2bc655; }
+  body.drivy {
+    background-color: #3c4659; }
+  body.chauffeur {
+    background-color: #252930; }
+  body.leon {
+    background-color: #ce0a2a; }
+  body.akeneo {
+    background-color: #8f21d5; }
+  body.beezup {
+    background-color: #0098e0; }
 
 .reveal {
   font-family: "Lato", sans-serif;

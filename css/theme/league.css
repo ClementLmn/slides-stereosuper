@@ -18,7 +18,20 @@ body {
   background: -o-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);
   background: -ms-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);
   background: radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);
-  background-color: #2b2b2b; }
+  background-color: #2b2b2b;
+  transition: background-color 0.5s linear; }
+  body.iadvize {
+    background-color: #2bc655; }
+  body.drivy {
+    background-color: #3c4659; }
+  body.chauffeur {
+    background-color: #252930; }
+  body.leon {
+    background-color: #ce0a2a; }
+  body.akeneo {
+    background-color: #8f21d5; }
+  body.beezup {
+    background-color: #0098e0; }
 
 .reveal {
   font-family: "Lato", sans-serif;

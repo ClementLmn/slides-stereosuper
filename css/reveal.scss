@@ -52,7 +52,6 @@ body {
 body {
 	position: relative;
 	line-height: 1;
-
 	background-color: #fff;
 	color: #000;
 }
@@ -88,6 +87,33 @@ body {
 
 	&.visible {
 		transform: scale( 1.3 );
+	}
+}
+
+
+.reveal .slides section .fragment.fromRight {
+	opacity: 1;
+	visibility: inherit;
+	transform: translate(100vw, 0);
+	&.visible {
+		transform: translate(0, 0);
+	}
+}
+
+.reveal .slides section .fragment.bgAppear {
+	opacity: 0;
+	visibility: inherit;
+	&.visible {
+		opacity: 1;
+	}
+}
+
+.reveal .slides section .fragment.toLeft {
+	opacity: 1;
+	visibility: inherit;
+	transform: translate(0, 0);
+	&.visible {
+		transform: translate(-100vw, 0);
 	}
 }
 

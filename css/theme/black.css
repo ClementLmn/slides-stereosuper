@@ -400,3 +400,56 @@ body {
   font-size: 60px !important;
   line-height: 1 !important;
   text-align: left !important; }
+
+.section-goliath {
+  display: flex;
+  position: relative; }
+  .section-goliath > span:not(.cross) {
+    position: relative;
+    width: 50%;
+    padding: 0 100px; }
+  .section-goliath .cross {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .section-goliath .cross:before {
+      content: "";
+      position: absolute;
+      top: calc(50% - 25px);
+      left: calc(50%);
+      height: 50px;
+      width: 1px;
+      transform: rotate(45deg);
+      background-color: rgba(255, 255, 255, 0.5); }
+    .section-goliath .cross:after {
+      content: "";
+      position: absolute;
+      top: calc(50%);
+      left: calc(50% - 25px);
+      height: 1px;
+      width: 50px;
+      transform: rotate(45deg);
+      background-color: rgba(255, 255, 255, 0.5); }
+  .section-goliath .txt-ss, .section-goliath .txt-sg {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 25px 0 0;
+    top: 100%;
+    left: 0;
+    font-size: 18px; }
+    .section-goliath .txt-ss span, .section-goliath .txt-sg span {
+      margin: 3px 0; }
+  .section-goliath .logo-ss {
+    display: flex; }
+    .section-goliath .logo-ss svg {
+      margin: 0 20px; }
+    .section-goliath .logo-ss #icon-stereo {
+      fill: white; }
+    .section-goliath .logo-ss #icon-super {
+      fill: #009be3; }
+  .section-goliath svg {
+    height: 100%;
+    max-width: 100%; }

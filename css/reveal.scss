@@ -70,6 +70,18 @@ body {
 		opacity: 1;
 		visibility: inherit;
 	}
+	&.fast{
+		transition: all .3s ease-in-out;
+		&.delayed{
+			transition: all .3s ease-in-out 0.15s;
+		}
+		&.delayed-2{
+			transition: all .3s ease-in-out 0.3s;
+		}
+		&.delayed-3{
+			transition: all .3s ease-in-out 0.45s;
+		}
+	}
 	&.delayed{
 		transition: all .5s ease-in-out 0.2s;
 	}
@@ -123,6 +135,15 @@ body {
 	transform: translate(0, -100vh) rotate(-40deg);
 	&.visible {
 		transform: translate(0, 0) rotate(0);
+	}
+}
+
+.reveal .slides section .fragment.fromTop {
+	opacity: 1;
+	visibility: inherit;
+	transform: translate(0, -100vh);
+	&.visible {
+		transform: translate(0, 0);
 	}
 }
 

@@ -166,4 +166,72 @@ section.has-light-background {
 	text-align: left !important;
 }
 
+.section-goliath{
+	display: flex;
+	position: relative;
+	> span:not(.cross) {
+		position: relative;
+		width: 50%;
+		padding: 0 100px;
+	}
+	.cross {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		&:before{
+			content: "";
+			position: absolute;
+			top: calc(50% - 25px);
+			left: calc(50%);
+			height: 50px;
+			width: 1px;
+			transform:  rotate(45deg);
+			background-color: rgba(white, 0.5);
+		}
+		&:after{
+			content: "";
+			position: absolute;
+			top: calc(50%);
+			left: calc(50% - 25px);
+			height: 1px;
+			width: 50px;
+			transform:  rotate(45deg);
+			background-color: rgba(white, 0.5);
+		}
+	}
+
+	.txt-ss, .txt-sg{
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin: 25px 0 0;
+		top: 100%;
+		left: 0;
+		font-size: 18px;
+		span {
+			margin: 3px 0;
+		}
+	}
+
+	.logo-ss {
+		display: flex;
+		svg {
+			margin: 0 20px;
+		}
+		#icon-stereo{
+			fill: white;
+		}
+		#icon-super{
+			
+			fill: #009be3;
+		}
+	}
+	svg {
+		height: 100%;
+		max-width: 100%;
+	}
+}
+
 

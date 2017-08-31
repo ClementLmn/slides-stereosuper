@@ -78,7 +78,7 @@ section.has-light-background {
 		justify-content: space-between;
 		> div {
 			position: relative;
-			img {
+			 img {
 				width: 200px;
 			}
 			.big-name {
@@ -106,6 +106,83 @@ section.has-light-background {
 		width: 100vw;
 	}
 	
+}
+
+.section-abileo{
+	display: flex;
+	flex-direction: column;
+	.row1{
+		height: 50%;
+		margin: 90px 0;
+		display: flex;
+		justify-content: space-around;
+	}
+	.row2{
+		margin: 90px 0;
+		display: flex;
+		justify-content: center;
+	}
+	.logo-ss {
+		display: flex;
+		svg {
+			height: 80px;
+			width: auto;
+			margin: 0 20px;
+		}
+		#icon-stereo{
+			fill: white;
+		}
+		#icon-super{
+			fill: #009be3;
+		}
+	}
+	.arrow-1{
+		top: 30%;
+		left: 44%;
+		transform-origin: left 50%;
+		width: 150px;
+	}
+	.arrow-2{
+		top: 46%;
+		left: 72%;
+		transform-origin: left 50%;
+		transform: rotate(130deg);
+		width: 150px;
+	}
+	.arrow-3{
+		top: 62%;
+		left: 38%;
+		transform-origin: left 50%;
+		transform: rotate(-130deg);
+		width: 150px;
+	}
+	.arrow {
+		position: absolute;
+		height: 1px;
+		background: rgba(white, 0.5);
+		&:before{
+			content: "";
+			position: absolute;
+			height: 1px;
+			width: 10px;
+			top: 0;
+			right: 0;
+			background: rgba(white, 0.5);
+			transform-origin: right 50%;
+			transform: rotate(45deg);
+		}
+		&:after{
+			content: "";
+			position: absolute;
+			height: 1px;
+			width: 10px;
+			top: 0;
+			right: 0;
+			background: rgba(white, 0.5);
+			transform-origin: right 50%;
+			transform: rotate(-45deg);
+		}
+	}
 }
 
 .logo-section{
@@ -231,6 +308,117 @@ section.has-light-background {
 	svg {
 		height: 100%;
 		max-width: 100%;
+	}
+}
+
+.section-phases{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding: 80px 0 !important;
+	justify-content: space-between;
+	height: 540px;
+	width: 960px;
+	.row1{
+		display: flex;
+		justify-content: space-between;
+	}
+	.row3{
+		display: flex;
+		justify-content: flex-end;
+	}
+	.image-base {
+		position: absolute;
+		bottom: 80px;
+		left: 0;
+		.stereobase {
+			height: auto;
+			width: 340px;
+		}
+	}
+	.step{
+		display: flex;
+		align-items: center;
+
+		.names{
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			color: $headingColor;
+			font-size: 22px;
+			text-align: left !important;
+			margin: 0 50px 0 0;
+			span {
+				margin: 2px 0;
+			}
+			&:after{
+				content: "";
+				position: absolute;
+				top: -5px;
+				height: calc(100% + 10px);
+				right: -25px;
+				width: 1px;
+				background-color: rgba(white, 0.5);
+			}
+		}
+		.desc{
+			text-align: left;
+			font-family: $elena !important;
+			font-size: 18px;
+		}
+	}
+	.arrow-1{
+		top: 16%;
+		left: 39%;
+		width: 200px;
+		transform-origin: left 50%;
+	}
+	.arrow-2{
+		top: 26%;
+		left: 88%;
+		width: 60px;
+		transform-origin: left 50%;
+		transform: rotate(90deg);
+	}
+	.arrow-3{
+		top: 48%;
+		left: 63%;
+		width: 150px;
+		transform-origin: left 50%;
+		transform: rotate(180deg);
+	}
+	.arrow-4{
+		top: 82%;
+		left: 48%;
+		width: 150px;
+		transform-origin: left 50%;
+	}
+	.arrow {
+		position: absolute;
+		height: 1px;
+		background: rgba(white, 0.5);
+		&:before{
+			content: "";
+			position: absolute;
+			height: 1px;
+			width: 10px;
+			top: 0;
+			right: 0;
+			background: rgba(white, 0.5);
+			transform-origin: right 50%;
+			transform: rotate(45deg);
+		}
+		&:after{
+			content: "";
+			position: absolute;
+			height: 1px;
+			width: 10px;
+			top: 0;
+			right: 0;
+			background: rgba(white, 0.5);
+			transform-origin: right 50%;
+			transform: rotate(-45deg);
+		}
 	}
 }
 

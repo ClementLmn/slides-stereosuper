@@ -525,6 +525,25 @@ body {
     height: 100%;
     max-width: 100%; }
 
+.section-intro .intern {
+  font-size: 25px; }
+
+.section-intro .logo-ss {
+  display: flex;
+  align-items: center;
+  margin-top: 50px; }
+  .section-intro .logo-ss span {
+    font-size: 70px; }
+  .section-intro .logo-ss svg {
+    width: 120px;
+    height: auto;
+    margin: 0 7px; }
+  .section-intro .logo-ss #icon-stereo {
+    fill: white; }
+  .section-intro .logo-ss #icon-super {
+    fill: #009be3;
+    margin-right: 50px; }
+
 .section-phases {
   position: relative;
   display: flex;

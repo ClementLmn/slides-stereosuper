@@ -311,6 +311,32 @@ section.has-light-background {
 	}
 }
 
+.section-intro{
+	.intern{
+		font-size: 25px;
+	}
+	.logo-ss {
+		display: flex;
+		align-items: center;
+		margin-top: 50px;
+		span {
+			font-size: 70px;
+		}
+		svg {
+			width: 120px;
+			height: auto;
+			margin: 0 7px;
+		}
+		#icon-stereo{
+			fill: white;
+		}
+		#icon-super{
+			fill: #009be3;
+			margin-right: 50px;
+		}
+	}
+}
+
 .section-phases{
 	position: relative;
 	display: flex;
